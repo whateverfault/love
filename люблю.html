@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для тебя</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FFD1DC 0%, #FFB6C1 25%, #FF69B4 50%, #FFB6C1 75%, #FFD1DC 100%);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .heart-bg {
+            position: fixed;
+            color: rgba(255, 182, 193, 0.6);
+            font-size: 2rem;
+            animation: float 4s ease-in-out infinite;
+            z-index: 1;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        .letter {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(255, 105, 180, 0.3);
+            min-height: 80vh;
+            overflow: visible;
+            position: relative;
+        }
+
+
+        h1 {
+            color: #C2185B;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.2);
+        }
+
+        .cat-image {
+            border-radius: 20px;
+            margin: 20px 0;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
+        }
+
+        .love-text {
+            color: #880E4F;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin: 20px 0;
+            white-space: pre-wrap;
+        }
+
+        .signature {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2rem;
+            color: #E91E63;
+            margin-top: 30px;
+        }
+
+        .hearts-decoration {
+            font-size: 2rem;
+            margin: 10px;
+        }
+
+        .floating-hearts {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5rem;
+            opacity: 0.3;
+            z-index: 0;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.1); }
+        }
+
+        @media (max-width: 600px) {
+            .letter {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .love-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-hearts">💖</div>
+
+    <div class="heart-bg" style="top: 10%; left: 10%;">💕</div>
+    <div class="heart-bg" style="top: 20%; right: 15%;">💗</div>
+    <div class="heart-bg" style="bottom: 15%; left: 20%;">💓</div>
+    <div class="heart-bg" style="bottom: 30%; right: 10%;">💝</div>
+    <div class="heart-bg" style="top: 40%; left: 5%;">💖</div>
+    <div class="heart-bg" style="top: 15%; left: 45%;">💕</div>
+    <div class="heart-bg" style="bottom: 45%; right: 35%;">💗</div>
+
+    <div class="container">
+        <div class="letter">
+            <h1>Моя любимая ❤️</h1>
+
+            <div class="hearts-decoration">💕💕💕</div>
+
+            <div class="love-text">
+Мой самый дорогой человек!
+
+С каждым моментом, проведенным с тобой, я понимаю, насколько много ты значишь для меня. Ты для меня самое дорогое, что есть.
+
+Ты - моё солнышко, моё счастье и моя любовь. Каждый раз, думая о тебе, я не могу поверить, тому какая же ты у меня замечательная и добрая, и ваще невероятная девачка💖
+
+Я люблю тебя больше, чем можно выразить словами. Невозможно описать то, какая ты прекрасная. Ты - моё всё.
+
+Бесконечно тебя люблю! 💕💕💕
+            </div>
+
+            <img class="cat-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjcPcMf_Xj65RShpPNlioWw1h82JQRTinejp_i80n27UHia9RYuffUvmVc&s=10" alt="Милые целующиеся котики">
+
+            <div class="love-text">
+Ты - лучшее, что случалось в моей жизни. Спасибо за каждую минуту счастья, за каждый тёплый взгляд и за каждую улыбку, которую ты даришь.
+
+Я всегда буду рядом и всегда буду поддерживать, любить и делать тебя самой самой счастливой.
+
+С любовью и нежностью, которые с каждым днем становятся только больше!
+            </div>
+
+            <img class="cat-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSufvfnBa-k-jDXk_CV9iUW9eGUenN-sx0jkJS0iwB-ANUqrq-QsEIp68j1&s=10" alt="Котики в объятиях">
+
+            <div class="love-text">
+Ты - моё сердце, моя душа и все все все на свете. Люблю тебя очинь очинь, моя замечательная девочка!
+
+💖💖💖💖💖
+            </div>
+
+            <div class="signature">Твой котек</div>
+
+            <div class="hearts-decoration">💗💗💗💗💗</div>
+        </div>
+    </div>
+
+    <script>
+        function createFloatingHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart-bg';
+            heart.innerHTML = ['💕', '💗', '💖', '💝', '💓'][Math.floor(Math.random() * 5)];
+            
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.top = Math.random() * 100 + '%';
+            heart.style.fontSize = (Math.random() * 2 + 1) + 'rem';
+            heart.style.animationDelay = Math.random() * 2 + 's';
+            
+            document.body.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 4000);
+        }
+
+        setInterval(createFloatingHeart, 300);
+
+        document.addEventListener('mousemove', (e) => {
+            if (Math.random() > 0.7) {
+                const heart = document.createElement('div');
+                heart.className = 'heart-bg';
+                heart.innerHTML = ['💖', '💕', '💗'][Math.floor(Math.random() * 3)];
+                heart.style.left = e.clientX + 'px';
+                heart.style.top = e.clientY + 'px';
+                heart.style.fontSize = (Math.random() * 2 + 1.5) + 'rem';
+                heart.style.animationDelay = '0s';
+                document.body.appendChild(heart);
+                
+                setTimeout(() => {
+                    heart.remove();
+                }, 800);
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            for (let i = 0; i < 3; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.className = 'heart-bg';
+                    heart.innerHTML = ['💖', '💕', '💗'][Math.floor(Math.random() * 3)];
+                    heart.style.left = e.clientX + 'px';
+                    heart.style.top = e.clientY + 'px';
+                    heart.style.fontSize = (Math.random() * 2 + 1.5) + 'rem';
+                    heart.style.animationDelay = '0s';
+                    document.body.appendChild(heart);
+                    
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 1000);
+                }, i * 100);
+            }
+        });
+    </script>
+</body>
+</html>
